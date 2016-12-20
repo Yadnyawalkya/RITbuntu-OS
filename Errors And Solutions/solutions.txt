@@ -1,0 +1,41 @@
+error 1:
+
+Build (/usr/bin/uck-gui --wait-before-exit) started at 2011-05-13 00:20:53
+sudo: no tty present and no askpass program specified
+Build ended at 2011-05-13 00:20:57
+
+solution:
+sudo -v
+uck-gui 
+
+===============================================================================================================
+
+error 2:
+uck repository
+
+solution:
+sudo add-apt-repository ppa:uck-team/uck-stable
+
+================================================================================================================
+
+error 3:
+"Failed to build gfxboot theme"
+
+solution:
+run the command
+sudo apt-get install libfribidi-bin
+
+===================================================================================================================
+
+error 4 :
+ unable to copy resolve.conf
+solution:
+
+#vi /usr/lib/uck/remaster-live-cd.sh
+
+go to string 358 ( on vi editor just print :set number and press enter)
+
+and change
+
+358 cp -d /etc/resolv.conf "$REMASTER_DIR/etc/resolv.conf" ||
+359 failure "Failed to copy resolv.conf, error=$?"

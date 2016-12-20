@@ -1,0 +1,43 @@
+http://www.codinglogs.com/blog/operating-systems/linux/build-your-own-linux-live-cd-dvd-distribution-based-on-ubuntu
+
+http://code.google.com/p/ardesia/wiki/Create_a_live_distro
+
+http://askubuntu.com/questions/48535/how-to-customize-the-ubuntu-live-cd
+
+https://help.ubuntu.com/community/LiveCDCustomization
+
+https://help.ubuntu.com/community/LiveCDCustomizationFromScratch
+
+http://fabrizioballiano.net/2007/11/27/remastering-an-ubuntu-alternate-iso-with-ubuntu-customization-kit-the-complete-guide/
+
+
+
+
+PPA
+
+sudo add-apt-repository ppa:uck-team/uck-stable
+
+repo
+
+http://repogen.simplylinux.ch/generate.php
+
+
+uck bug
+
+sudo apt-get install libfribidi-bin
+
+Change Wallpaper
+
+sudo nautilus ~/tmp/remaster-root/usr/share/backgrounds
+
+uckgui
+http://gfs.sourceforge.net/wiki/index.php/Customising_Ubuntu_with_uck
+
+
+uck-gui (to unsquash and up to customizing, then, I would close the terminal)
+uck-remaster-chroot-rootfs (to customize)
+uck-remaster-finalize-alternate (to build the iso but not remove files)
+uck-remaster-clean (to clean up files once I am finished for good with the remaster-root files)
+
+
+
